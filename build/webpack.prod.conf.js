@@ -117,4 +117,7 @@ if (config.build.bundleAnalyzerReport) {
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
 }
 
+// for gh-pages
+config.build.assetsPublicPath = '/'
+
 module.exports = webpackConfig
